@@ -4,6 +4,9 @@ import Home from './components/Home';
 import LoginPage from './components/loginPage';
 import RegisterPage from './components/registerPage';
 import Accueil from './components/Accueil';
+import ForgotPassword from './components/ForgotPassword';
+import ResetPassword from './components/ResetPassword';
+
 const App = () => {
   return (
     <Router>
@@ -19,7 +22,10 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/login" element={<LoginPage />} />
           <Route path="/register" element={<RegisterPage />} />
-       <Route path='accueil' element={<Accueil/>}/>
+       <Route path='/accueil' element={<Accueil/>}/>
+       <Route path='/forgetpossword' element={<ForgotPassword/>}/>
+       <Route path='/reset/:token' element={<ResetPassword/>}/>
+
         </Routes>
       </div>
     </Router>

@@ -1,6 +1,5 @@
 import axios from "axios";
-
-import React , { useState, useEffect }from "react";
+import  { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
 const LoginPage = () => {
@@ -82,6 +81,12 @@ const LoginPage = () => {
                         className="text-blue-500 hover:underline"
                     >
                         Pas encore de compte ? Inscrivez-vous ici.
+                    </button>
+                    <button
+                        onClick={() => navigate("/forgetpossword")}
+                        className="text-blue-500 hover:underline block mt-2"
+                    >
+                        Mot de passe oublié ?
                     </button>
                 </div>
             </div>
